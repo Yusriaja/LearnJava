@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:clickable="false"
+    android:duplicateParentState="false"
+    android:fadingEdge="vertical|none"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:importantForAccessibility="auto"
+    android:longClickable="false"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbarFadeDuration="1"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    android:textAlignment="inherit"
+    android:visibility="visible" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+
+    <TextView
+        android:id="@+id/text_view_ques"
+        style="@style/CardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/no_question"
+        android:textColor="#ff40A0F0"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_ans"
+        style="@style/Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_view_ques"
+        android:layout_below="@+id/text_view_ques"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="fill_horizontal"
+        android:lineSpacingExtra="9dp"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:text="@string/no_answer"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff202020"
+        android:textSize="18sp" />
+
+    <ImageButton 
+        android:background="@drawable/fav_off"
+        android:id="@+id/image_fav"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="changeFavStatus"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+ />
+
+</RelativeLayout>
+
+</ScrollView>
